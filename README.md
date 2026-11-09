@@ -30,17 +30,32 @@ The Note class represents a single note with a title and text content. The NoteM
 
 ## Installation
 
-Requires Python 3.x.
+Requires Python 3.x (with Tkinter, which is included in the official Windows installer).
 
-Run `pip install -r requirements.txt` to install the dependencies.
+1. Clone the repository and enter the directory.
+2. Install dependencies:
 
-or Install them manually:
+   ```
+   pip install -r requirements.txt
+   ```
 
-```
-pip install tkinter
-pip install json
-pip install ttkbootstrap
-```
+   > Note: `tkinter` and `json` are built-in Python modules and are NOT pip packages.
+   > The only third-party dependency is `ttkbootstrap`, which is listed in `requirements.txt`.
+
+3. Run the app:
+
+   ```
+   python note.py
+   ```
+
+   For the dark theme version, run `python notedark.py`.
+
+### Verified local environment
+
+The app was tested to run successfully with:
+
+- Python 3.13 (official Windows build, `py -3.13`)
+- ttkbootstrap 2.2.7
 
 ## License
 
